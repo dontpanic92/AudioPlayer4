@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{37c9fb0f-6853-4398-829c-5f38ba779153}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{d9d2b405-4ac3-41bd-999a-58f2ae1f9e5c}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{08c770ab-0cc1-4201-8776-5569e14595e5}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;manifest</Extensions>
+    </Filter>
+    <Filter Include="RPlayer">
+      <UniqueIdentifier>{78ddaff1-e6ff-4853-b57e-b6238773db69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty">
+      <UniqueIdentifier>{26395eb9-022d-4ef1-aa6f-e8a0f98bd181}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\rapidxml">
+      <UniqueIdentifier>{fe4db334-4f78-4d7b-9d5e-39227dedd9fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialogs">
+      <UniqueIdentifier>{6e9a39d5-10f3-401f-b420-b4c5b4579cce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows">
+      <UniqueIdentifier>{c5b4e710-140f-4dff-aa32-320c27bb4b6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls">
+      <UniqueIdentifier>{69d831eb-7735-439d-9309-da4526245b16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Visualizations">
+      <UniqueIdentifier>{ebc6633c-4f6c-4c6a-9a48-c2f0a96871f9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RPlayer\ApeDecoder.cpp">
+      <Filter>RPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="RPlayer\MP3Decoder.cpp">
+      <Filter>RPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="RPlayer\OggDecoder.cpp">
+      <Filter>RPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="RPlayer\RPlayer.cpp">
+      <Filter>RPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="RPlayer\WAVDecoder.cpp">
+      <Filter>RPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="RPlayerApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="defination.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TagSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainDlg2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RPlayer\RPlayerBuffer.cpp">
+      <Filter>RPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="RPlayer\RDecoderManager.cpp">
+      <Filter>RPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\RSpectrumWindow.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Visualizations\Fourier.cpp">
+      <Filter>Visualizations</Filter>
+    </ClCompile>
+    <ClCompile Include="Visualizations\RAnalyzer.cpp">
+      <Filter>Visualizations</Filter>
+    </ClCompile>
+    <ClCompile Include="Visualizations\RAnalyzerPainter.cpp">
+      <Filter>Visualizations</Filter>
+    </ClCompile>
+    <ClCompile Include="Visualizations\RAnalyzerSpectrumPainter.cpp">
+      <Filter>Visualizations</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\RSkinAeroCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\RSkinCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AboutDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Skin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RPlayer\ApeDecoder.h">
+      <Filter>RPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="RPlayer\Decoder.h">
+      <Filter>RPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="RPlayer\MP3Decoder.h">
+      <Filter>RPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="RPlayer\OggDecoder.h">
+      <Filter>RPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="RPlayer\RPlayer.h">
+      <Filter>RPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="RPlayer\WAVDecoder.h">
+      <Filter>RPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdparty\ZLibWrap.h">
+      <Filter>3rdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdparty\rapidxml\rapidall.h">
+      <Filter>3rdparty\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdparty\rapidxml\rapidxml.hpp">
+      <Filter>3rdparty\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdparty\rapidxml\rapidxml_iterators.hpp">
+      <Filter>3rdparty\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdparty\rapidxml\rapidxml_print.hpp">
+      <Filter>3rdparty\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdparty\rapidxml\rapidxml_utils.hpp">
+      <Filter>3rdparty\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainDlg2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TagSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\Dialogs.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\DlgOpenFile.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="RThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RPlayer\RPlayerBuffer.h">
+      <Filter>RPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="RPlayer\RDecoderManager.h">
+      <Filter>RPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\DlgBpmDetect.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\RSpectrumWindow.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\RSkinAeroCtrl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\RSkinCtrl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualizations\Fourier.h">
+      <Filter>Visualizations</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualizations\RAnalyzer.h">
+      <Filter>Visualizations</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualizations\RAnalyzerPainter.h">
+      <Filter>Visualizations</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualizations\RAnalyzerSpectrumPainter.h">
+      <Filter>Visualizations</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RPlayer.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Dialogs.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\RPlayer.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon1.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

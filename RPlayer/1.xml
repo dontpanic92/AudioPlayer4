@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<rskin img="main.bmp">
+	<Button id="btnPlay" img="play.bmp" x="21" y="136"  />
+	<Button id="btnPause" img="pause.bmp" x="21" y="136"  />
+	<Button id="btnStop" img="stop.bmp" x="63" y="136"  />
+	<Button id="btnPrev" img="prev.bmp" x="97" y="136" />
+	<Button id="btnNext" img="next.bmp" x="131" y="136" />
+	<Button id="btnMinimize" img="minimize.bmp" x="223" y="0" />
+	<Button id="btnMinimode" img="minimode.bmp" x="249" y="0" />
+	<Button id="btnClose" img="close.bmp" x="272" y="0" />
+	<Slider id="posSlider" img="progress_fill.bmp" thumbimg="progress_thumb.bmp" x1="19" y1="64" x2="212" y2="85" />
+	<Slider id="volSlider" img="progress2.bmp" thumbimg="progress_thumb2.bmp" x1="232" y1="140" x2="295" y2="152" />
+	<Static id="staticTime" img="number.bmp" x1="147" y1="84" x2="305" y2="103" />
+</rskin>

@@ -1,0 +1,132 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "MainPopupMenu"
+    BEGIN
+        MENUITEM "设置",                          ID_PLAY
+    END
+    POPUP "ListPopupMenu"
+    BEGIN
+        MENUITEM "播放",                          ID_PLAY
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon1.ico"
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINDLG2 DIALOGEX 0, 0, 198, 344
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+CAPTION "wtltest"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC_TIME2,"Static",SS_OWNERDRAW | WS_GROUP,141,48,55,14
+    CONTROL         "",IDC_POS_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,0,66,196,15
+    CONTROL         "",IDC_STATIC_DETAIL2,"Static",SS_OWNERDRAW | WS_GROUP,145,16,51,33
+    PUSHBUTTON      "",IDC_BTN_PLAY,21,82,16,15,BS_BITMAP
+    PUSHBUTTON      "",IDC_BTN_PAUSE,21,82,16,15
+    PUSHBUTTON      "",IDC_BTN_STOP,37,82,16,15
+    CONTROL         "",IDC_VOL_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,142,85,51,12
+    CONTROL         "",IDC_STATIC_NAME2,"Static",SS_OWNERDRAW | WS_GROUP,1,0,195,16
+    CONTROL         "",IDC_TAB1,"SysTabControl32",TCS_MULTILINE,1,100,195,231,WS_EX_WINDOWEDGE
+    CONTROL         "",IDC_STATIC_STATUS2,"Static",SS_OWNERDRAW | WS_GROUP,2,334,194,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MAINDLG2, DIALOG
+    BEGIN
+        RIGHTMARGIN, 196
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+

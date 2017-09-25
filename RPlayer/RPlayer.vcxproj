@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0A885F20-737D-46B4-97FB-2159CEA1A4EC}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>Debug</IntDir>
+    <OutDir>Debug</OutDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\SDKs\wtl81\include;E:\SDKs\Microsoft DirectX SDK %28June 2010%29\Include;D:\ogre\OgreSDK_vc10_v1-7-3\boost_1_44;D:\ogre\OgreSDK_vc10_v1-7-3\include\OGRE;D:\ogre\OgreSDK_vc10_v1-7-3\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>Release</IntDir>
+    <OutDir>Release</OutDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>E:\SDKs\wtl81\include;E:\SDKs\Microsoft DirectX SDK %28June 2010%29\Include;D:\ogre\OgreSDK_vc10_v1-7-3\boost_1_44;D:\ogre\OgreSDK_vc10_v1-7-3\include\OGRE;D:\ogre\OgreSDK_vc10_v1-7-3\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>ID3LIB_LINKOPTION=1;WIN32;_WINDOWS;STRICT;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/NODEFAULTLIB:libcmt %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>RPlayer.h</HeaderFileName>
+      <InterfaceIdentifierFileName>RPlayer_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>RPlayer_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/RPlayer.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>ID3LIB_LINKOPTION=1;WIN32;_WINDOWS;STRICT;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <DelayLoadDLLs>dwmapi.dll</DelayLoadDLLs>
+      <AdditionalOptions>/NODEFAULTLIB:libcmt %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>RPlayer.h</HeaderFileName>
+      <InterfaceIdentifierFileName>RPlayer_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>RPlayer_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/RPlayer.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Controls\RSkinAeroCtrl.cpp" />
+    <ClCompile Include="Controls\RSkinCtrl.cpp" />
+    <ClCompile Include="defination.cpp" />
+    <ClCompile Include="MainDlg2.cpp" />
+    <ClCompile Include="PlayList.cpp" />
+    <ClCompile Include="RPlayerApp.cpp" />
+    <ClCompile Include="RPlayer\ApeDecoder.cpp" />
+    <ClCompile Include="RPlayer\MP3Decoder.cpp" />
+    <ClCompile Include="RPlayer\OggDecoder.cpp" />
+    <ClCompile Include="RPlayer\RDecoderManager.cpp" />
+    <ClCompile Include="RPlayer\RPlayer.cpp" />
+    <ClCompile Include="RPlayer\RPlayerBuffer.cpp" />
+    <ClCompile Include="RPlayer\WAVDecoder.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TagSystem.cpp" />
+    <ClCompile Include="Visualizations\Fourier.cpp" />
+    <ClCompile Include="Visualizations\RAnalyzer.cpp" />
+    <ClCompile Include="Visualizations\RAnalyzerPainter.cpp" />
+    <ClCompile Include="Visualizations\RAnalyzerSpectrumPainter.cpp" />
+    <ClCompile Include="Windows\RSpectrumWindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3rdparty\rapidxml\rapidall.h" />
+    <ClInclude Include="3rdparty\rapidxml\rapidxml.hpp" />
+    <ClInclude Include="3rdparty\rapidxml\rapidxml_iterators.hpp" />
+    <ClInclude Include="3rdparty\rapidxml\rapidxml_print.hpp" />
+    <ClInclude Include="3rdparty\rapidxml\rapidxml_utils.hpp" />
+    <ClInclude Include="3rdparty\ZLibWrap.h" />
+    <ClInclude Include="AboutDlg.h" />
+    <ClInclude Include="Controls\RSkinAeroCtrl.h" />
+    <ClInclude Include="Controls\RSkinCtrl.h" />
+    <ClInclude Include="Dialogs\Dialogs.h" />
+    <ClInclude Include="Dialogs\DlgBpmDetect.h" />
+    <ClInclude Include="Dialogs\DlgOpenFile.h" />
+    <ClInclude Include="MainDlg.h" />
+    <ClInclude Include="MainDlg2.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="PlayList.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="RPlayer\ApeDecoder.h" />
+    <ClInclude Include="RPlayer\Decoder.h" />
+    <ClInclude Include="RPlayer\MP3Decoder.h" />
+    <ClInclude Include="RPlayer\OggDecoder.h" />
+    <ClInclude Include="RPlayer\RDecoderManager.h" />
+    <ClInclude Include="RPlayer\RPlayer.h" />
+    <ClInclude Include="RPlayer\RPlayerBuffer.h" />
+    <ClInclude Include="RPlayer\WAVDecoder.h" />
+    <ClInclude Include="RThread.h" />
+    <ClInclude Include="Skin.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TagSystem.h" />
+    <ClInclude Include="Visualizations\Fourier.h" />
+    <ClInclude Include="Visualizations\RAnalyzer.h" />
+    <ClInclude Include="Visualizations\RAnalyzerPainter.h" />
+    <ClInclude Include="Visualizations\RAnalyzerSpectrumPainter.h" />
+    <ClInclude Include="Windows\RSpectrumWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Dialogs.rc" />
+    <ResourceCompile Include="RPlayer.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bitmap1.bmp" />
+    <None Include="icon1.ico" />
+    <None Include="res\RPlayer.ico" />
+    <None Include="res\Toolbar.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="RPlayer.rc" />
+      <UserProperties RESOURCE_FILE="wtltest.rc" />
+      <UserProperties RESOURCE_FILE="wtltest3.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
