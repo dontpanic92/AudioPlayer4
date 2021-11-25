@@ -218,13 +218,24 @@ void RSlider::SetBk(HBITMAP hBmp){
 }
 
 void RSlider::ReleaseSkin(){
-	Thumb.DestroyWindow();
-	DeleteObject(hThumbBmp);
-	DeleteObject(hProgressBmp);
+	if (Thumb) {
+		Thumb.DestroyWindow();
+		Thumb.ModifyStyle(WS_VISIBLE, 0);
+	}
+
+	if (hThumbBmp) {
+		DeleteObject(hThumbBmp);
+	}
+
+	if (hProgressBmp) {
+		DeleteObject(hProgressBmp);
+	}
+
 	hThumbBmp = NULL;
 	hProgressBmp = NULL;
-	imgLst.RemoveAll();
-	Thumb.ModifyStyle(WS_VISIBLE, 0);
+	if (imgLst) {
+		imgLst.RemoveAll();
+	}
 }
 
 void RSlider::SetSkin(wchar_t* szProgress, wchar_t* szThumb){

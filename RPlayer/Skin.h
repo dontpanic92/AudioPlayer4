@@ -267,12 +267,27 @@ void RSkin<T>::ReleaseSkin(){
 	hWindowRgn = NULL;
 	loaded = false;
 	wX = wY = 0;
-	posSlider.DestroyWindow();
-	staticTime.DestroyWindow();
+
+	if (posSlider) {
+		posSlider.DestroyWindow();
+	}
+
+	if (staticTime) {
+		staticTime.DestroyWindow();
+	}
+
 	for(int i = 0; i < BTN_NUM; i++){
-		Buttons[i].btnIml.RemoveAll();
-		Buttons[i].btn.ModifyStyle(WS_VISIBLE, 0);
-		DeleteObject(Buttons[i].hBtnBmp);
+		if (Buttons[i].btnIml) {
+			Buttons[i].btnIml.RemoveAll();
+		}
+
+		if (Buttons[i].btn) {
+			Buttons[i].btn.ModifyStyle(WS_VISIBLE, 0);
+		}
+
+		if (Buttons[i].hBtnBmp) {
+			DeleteObject(Buttons[i].hBtnBmp);
+		}
 	}
 }
 template <class T>
